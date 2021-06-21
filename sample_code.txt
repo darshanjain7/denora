@@ -1,0 +1,192 @@
+<style>
+@media screen and (max-width: 599px) {
+.bigres{
+display: none;
+}
+.smlres{
+display:block;
+}
+}
+
+@media screen and (min-width: 600px) {
+.smlres{
+display: none;
+}
+.bigres{
+display: block;
+}
+}
+.smlres {
+box-shadow: 0 0 8px #3939391a;
+width: 100%;
+text-align: center;
+}
+ 
+   
+ </style>
+ 
+<script>
+
+ var isMobile = {
+Android: function() {
+    return navigator.userAgent.match(/Android/i) ? true : false;
+},
+BlackBerry: function() {
+    return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+},
+iOS: function() {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+},
+Windows: function() {
+    return navigator.userAgent.match(/IEMobile/i) ? true : false;
+},
+any: function() {
+    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+}
+};
+
+
+    $(document).ready(function(){
+      $(".bg-blk").click(function(){
+        
+        $(".bg-blk").hide();
+      });
+
+      $("#one").click(function(){
+	    var data = ["CL1000B","SK105C-CL500/1000 Service Kit~72","SK105D-CL500/1000 Bufferless Cell Service Kit~73","SK105E-CL500/1000 Quarterly Service Kit~74","(Spare) CL1000B Analyser Probe~103"];  
+	  	if(typeof Android !== "undefined" && Android !== null) {
+             Android.showToast(data);
+            return;
+        }
+		    if(isMobile.any()){
+            window.webkit.messageHandlers.observer.postMessage(data);
+            return
+			}
+ 
+        $("#myDIV1").hide();
+        $("#myDIV").show();
+        $(".bg-blk").show();
+        $(".bg-blk").css("background-color:#0000;");
+		
+      });
+	  
+		$("#two").click(function(){
+	 var data = ["CL1000B","SK105C-CL500/1000 Service Kit~72","SK105D-CL500/1000 Bufferless Cell Service Kit~73","SK105E-CL500/1000 Quarterly Service Kit~74","(Spare) CL1000B Analyser Probe~103"];  
+	   	if(typeof Android !== "undefined" && Android !== null) {
+             Android.showToast(data);
+            return;
+        }
+		    if(isMobile.any()){
+            window.webkit.messageHandlers.observer.postMessage(data);
+            return
+			}
+		
+        $("#myDIV").hide();
+         $("#myDIV1").show();
+         $(".bg-blk").show();
+        $(".bg-blk").css("background-color:#0000;");
+		 
+      });
+	   $("#onee").click(function(){
+	   var data = ["CL1000B","SK105C-CL500/1000 Service Kit~72","SK105D-CL500/1000 Bufferless Cell Service Kit~73","SK105E-CL500/1000 Quarterly Service Kit~74","(Spare) CL1000B Analyser Probe~103"];  
+	  	if(typeof Android !== "undefined" && Android !== null) {
+             Android.showToast(data);
+            return;
+        }
+		    if(isMobile.any()){
+            window.webkit.messageHandlers.observer.postMessage(data);
+            return
+			}
+         $("#myDIV1").hide();
+        $("#myDIV").show();
+        $(".bg-blk").show();
+        $(".bg-blk").css("background-color:#0000;");
+		
+      });
+	  
+		$("#twoe").click(function(){
+	 var data = ["CL1000B","SK105C-CL500/1000 Service Kit~72","SK105D-CL500/1000 Bufferless Cell Service Kit~73","SK105E-CL500/1000 Quarterly Service Kit~74","(Spare) CL1000B Analyser Probe~103"];  
+	   	if(typeof Android !== "undefined" && Android !== null) {
+             Android.showToast(data);
+            return;
+        }
+		    if(isMobile.any()){
+            window.webkit.messageHandlers.observer.postMessage(data);
+            return
+			}
+		
+        $("#myDIV").hide();
+         $("#myDIV1").show();
+         $(".bg-blk").show();
+        $(".bg-blk").css("background-color:#0000;");
+		  
+      });
+	  
+	   
+      
+    });
+    </script>
+ <div style="height:633px; float:left;" class="bigres">
+          <img src="https://gaschlorination.denora.com/CL1000B_Analyser.jpg" border="0" usemap="#Map" style="height:100%">
+          <map name="Map">
+            <area shape="rect" id="one" coords="231,24,503,397" href="#">
+            <area shape="rect" id="two" coords="33,39,209,255" href="#">
+          </map>
+   </div>
+
+   <div style="height:200px; float:left;" class="smlres">
+    <img src="https://gaschlorination.denora.com/CL1000B_Analyser.jpg" border="0" usemap="#Map1" style="height:100%">
+    <map name="Map1">
+      <area shape="rect" id="onee" coords="73,11,159,125" href="#">
+      <area shape="rect" id="twoe" coords="10,14,62,78" href="#">
+    </map>
+</div>
+ 
+<div class="pops">
+    <div class="bg-blk" style="display: none; width:100%; height:100%; float:left; position: Fixed; z-index: 9999999; top: 0;">
+    <div style="width:50%; margin:0 auto">
+   <div id="myDIV1" style="display: none;">
+				<h2 style="margin-top: 0;font-size: 22px;">CL1000B</h2>
+			  <span class="skupoptxt">
+			   <a style="color: green; font-size: 17px;margin-left: -17px;" href="/productskudetails/72">SK105C-CL500/1000 Service Kit</a>
+			  </span>
+			  <div class="line"></div> 
+			  <span class="skupoptxt">
+			  <a style="color: green; font-size: 17px;margin-left: -17px;" href="/productskudetails/73">SK105D-CL500/1000 Bufferless Cell Service Kit</a>
+			  
+			  </span>
+			  <div class="line"></div> 
+			  <span class="skupoptxt">
+			  <a style="color: green; font-size: 17px;margin-left: -17px;" href="/productskudetails/74">SK105E-CL500/1000 Quarterly Service Kit</a>
+			  <span>
+			  <div class="line"></div> 
+			  <span class="skupoptxt">
+			  <a style="color: green; font-size: 17px;margin-left: -17px;" href="/sendenquiry/77-1006-A">(Spare) CL1000B Analyser Probe</a>
+			  <span>
+			  
+        </div>
+      <div id="myDIV" style="display: none;">
+				<h2 style="margin-top: 0;font-size: 22px;">CL1000B</h2>
+			  <span class="skupoptxt">
+			   <a style="color: green; font-size: 17px;margin-left: -17px;" href="/productskudetails/72">SK105C-CL500/1000 Service Kit</a>
+			  </span>
+			  <div class="line"></div> 
+			  <span class="skupoptxt">
+			  <a style="color: green; font-size: 17px;margin-left: -17px;" href="/productskudetails/73">SK105D-CL500/1000 Bufferless Cell Service Kit</a>
+			  
+			  </span>
+			  <div class="line"></div> 
+			  <span class="skupoptxt">
+			  <a style="color: green; font-size: 17px;margin-left: -17px;" href="/productskudetails/74">SK105E-CL500/1000 Quarterly Service Kit</a>
+			  <span>
+			  <div class="line"></div> 
+			  <span class="skupoptxt">
+			  <a style="color: green; font-size: 17px;margin-left: -17px;" href="/sendenquiry/77-1006-A">(Spare) CL1000B Analyser Probe</a>
+			  <span>
+			  
+        </div>
+		 
+      </div>
+    </div>
+  </div>
+ 

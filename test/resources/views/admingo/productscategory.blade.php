@@ -1,0 +1,53 @@
+@extends('inc.adminlayout123')
+
+@section('content')
+<div class="main">
+           <div class="main-content">
+               <div class="container-fluid">
+                   
+                   <div class="row">
+                       <div class="col-md-1"></div>
+                       <div class="col-md-10">
+       @include('inc.messages')
+                <div class="panel">
+                        @if(Session::has('flash_message'))
+   <div class="alert alert-success"  data-expires="5000"><span class="glyphicon glyphicon-ok"></span><em> {!! session('flash_message') !!}</em></div>
+@endif
+                               <div class="panel-heading">
+                                     <h3  style="    color: #2b333e; font-weight: 600;">Create Product Category</h3>
+                               </div>
+                               <div class="panel-body">
+                <form action="{{ action('ProductscategoryController@store')}}" method="post"  enctype="multipart/form-data">
+                                 @csrf
+
+                                 
+
+                                           <div class="col-md-2">Product Type:</div><div class="col-md-10"><select class="form-control" name="protypename">
+                                               @foreach($tbl_content as $tbl_contents)
+                                               <option value="{{$tbl_contents->product_type_id}} ">{{$tbl_contents->product_type}} </option>
+                                                
+                                               @endforeach
+                                           </select>
+                                       <br></div>
+
+                                       <div class="col-md-2">Category Name:</div><div class="col-md-10"><input type="text" class="form-control" placeholder="Category Name" name="catname" rows="4" required="">
+                                       <br></div>
+ 
+                                 <br>
+                                    <div class="col-md-5"></div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                   </form>	
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- END MAIN CONTENT -->
+       </div>
+
+
+   </div>
+@endsection
+ 

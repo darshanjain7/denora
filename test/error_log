@@ -1,0 +1,8 @@
+[05-Jun-2020 11:31:23 America/New_York] PHP Parse error:  syntax error, unexpected '?' in /home/denoraarokiait/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[19-Jun-2020 03:12:11 America/New_York] PHP Parse error:  syntax error, unexpected '?' in /home/denorasiydemo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[06-Jul-2020 11:47:09 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\ApicontactController::list() in /home/denorasiydemo/public_html/app/Http/Controllers/ApicontactController.php on line 35
+[20-Nov-2020 05:39:08 UTC] PHP Warning:  proc_open(): fork failed - Cannot allocate memory in phar:///opt/cpanel/composer/bin/composer/vendor/symfony/console/Application.php on line 952
+[20-Nov-2020 06:23:26 UTC] PHP Warning:  proc_open(): fork failed - Cannot allocate memory in phar:///opt/cpanel/composer/bin/composer/vendor/symfony/console/Application.php on line 952
+[20-Nov-2020 06:25:42 UTC] PHP Warning:  proc_open(): fork failed - Cannot allocate memory in phar:///opt/cpanel/composer/bin/composer/vendor/symfony/console/Application.php on line 952
+[20-Nov-2020 06:34:29 UTC] PHP Warning:  proc_open(): fork failed - Cannot allocate memory in phar:///opt/cpanel/composer/bin/composer/vendor/symfony/console/Application.php on line 952
+[20-Nov-2020 06:38:07 UTC] PHP Warning:  proc_open(): fork failed - Cannot allocate memory in phar:///opt/cpanel/composer/bin/composer/vendor/symfony/console/Application.php on line 952

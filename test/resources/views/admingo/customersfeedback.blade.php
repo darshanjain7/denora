@@ -1,0 +1,79 @@
+
+
+@extends('inc.adminlayout1234')
+ 
+ @section('content')
+ 
+        <!-- /#page-wrapper -->
+ <div class="main">
+            <div class="main-content">
+                <div class="container-fluid">
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- BORDERED TABLE -->
+                            <div class="panel">
+                                <div class="panel-heading">
+                                @if(Session::has('flash_message'))
+     <div class="alert alert-success"  data-expires="5000"><span class="glyphicon glyphicon-ok"></span><em> {!! session('flash_message') !!}</em></div>
+ @endif 
+                                     <h3  class="panel-title" style="   font-size: 24px; color: #2b333e; font-weight: 600;">Feedback Details</h3>
+                                    
+                                </div>
+                                <div class="panel-body">
+                                    <table id="example" class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                            <th width="10%">#</th>
+                                                <th width="20%">Rating (from star ratings)</th>
+                                                <th width="20%" >Recommend De Nora</th>
+                                                <th width="20%">Submitted Date</th>
+                                             
+                                                <th width="20%">View More</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                             @if(count($value123)>0)
+                                             <?php $i=0; ?>
+ 
+                                             @foreach($value123 as $tbl_contents)
+                                            <tr>
+                                            <td>{{++$i}}</td>
+                                               
+                                                 <td>{{$tbl_contents->rating}}</td>
+                                                <td>{{$tbl_contents->recomand}}</td>
+                                                   <td><?php $date=$tbl_contents->created_date ?>
+                                                 <?php  $date1=date('d-m-Y', strtotime($date));
+                                                  echo $date1; ?> </td>
+                                                  
+                                       
+                                                <td> <a  href="customersfeedback/{{$tbl_contents->cust_feed_id}}" >view</a></td>
+                                            </tr>
+                                             @endforeach
+                                             </tbody>
+                                    </table>
+                                            
+                                             @else
+                                             <span>No data found</span>
+                                             @endif
+                                            
+ 
+                                             
+                                         
+                                </div>
+                            </div>
+                            <!-- END BORDERED TABLE -->
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- END MAIN CONTENT -->
+        </div>
+ 
+  
+    </div>
+ 
+ 
+ @endsection

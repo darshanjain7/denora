@@ -1,0 +1,3 @@
+[05-Jun-2020 11:31:23 America/New_York] PHP Parse error:  syntax error, unexpected '?' in /home/denoraarokiait/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[19-Jun-2020 03:12:11 America/New_York] PHP Parse error:  syntax error, unexpected '?' in /home/denorasiydemo/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[06-Jul-2020 11:47:09 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\ApicontactController::list() in /home/denorasiydemo/public_html/app/Http/Controllers/ApicontactController.php on line 35
